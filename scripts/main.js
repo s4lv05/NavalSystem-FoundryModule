@@ -8,7 +8,7 @@ Hooks.on("init", function() {
         NavalShipSheet,
         {
             types: ["Vehicle"],
-            makeDefault: false
+            makeDefault: true
         }
     );
 });
