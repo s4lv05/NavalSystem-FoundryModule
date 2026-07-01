@@ -1,11 +1,23 @@
-export class NavalShipSheet extends foundry.applications.api.ApplicationV2 {
+var path = "modules/NavalSystem-FoudryModule/templates/ship-sheet.hbs";
 
+export class NavalShipSheet extends foundry.applications.sheets.ActorSheetV2 {
+    
     static DEFAULT_OPTIONS = {
         id: "naval-ship-sheet",
         classes: ["naval-sheet"],
+        position: {
+            width: 500,
+            heigth: 400
+        },
         window: {
             title: "Naval Ship",
             resizable: true
+        }
+    };
+
+    static PARTS = {
+        body: {
+            template: path
         }
     };
 
@@ -16,11 +28,12 @@ export class NavalShipSheet extends foundry.applications.api.ApplicationV2 {
 
     async _prepareContext() {
         return {
-            actor: this.document
+            actor: this.document,
+            system: this.document.system
         };
     }
 
-    onRender(context, options) {
+    _onRender(context, options) {
         const html = this.element;
 
         html.querySelector(".damage-hull")?.addEventListener("click", async () => {

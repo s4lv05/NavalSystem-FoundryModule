@@ -3,10 +3,14 @@ import { NavalShipSheet } from "./ship-sheet.js";
 Hooks.on("init", function() {
     console.log("⚓ Naval System Module | init ok 🟢");
 
-    Actors.registerSheet("naval", NavalShipSheet, {
-        types: ["vehicle"],
-        makeDefault: false
-    });
+    foundry.documents.collections.Actors.registerSheet(
+        "naval",
+        NavalShipSheet,
+        {
+            types: ["Vehicle"],
+            makeDefault: false
+        }
+    );
 });
 
 Hooks.on("ready", function() {
