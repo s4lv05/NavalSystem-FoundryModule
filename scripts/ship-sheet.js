@@ -1,27 +1,27 @@
-export class NavalShipSheet extends foundry.application.api.ApplicationV2 {
+export class NavalShipSheet extends foundry.applications.api.ApplicationV2 {
 
-    static DEFAULT_OPTION = {
+    static DEFAULT_OPTIONS = {
         id: "naval-ship-sheet",
         classes: ["naval-sheet"],
         window: {
             title: "Naval Ship",
-            resizible: true
+            resizable: true
         }
     };
 
-    constructor(document, option =  {}) {
+    constructor(document, options =  {}) {
         super(option);
         this.document = document; //actor
     }
 
     async _prepareContext() {
         return {
-            actore: this.document
+            actor: this.document
         };
     }
 
     onRender(context, options) {
-        const html = this.elements;
+        const html = this.element;
 
         html.querySelector(".damage-hull")?.addEventListener("click", async () => {
             const current = this.document.system.hull ?? 0;
