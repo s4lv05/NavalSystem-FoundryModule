@@ -1,4 +1,4 @@
-var path = "modules/NavalSystem-FoudryModule/templates/ship-sheet.hbs";
+var path = "../templates/ship-sheet.hbs";
 
 export class NavalShipSheet extends foundry.applications.sheets.ActorSheetV2 {
     
