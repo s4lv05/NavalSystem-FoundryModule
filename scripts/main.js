@@ -15,6 +15,7 @@ Hooks.on("preCreateActor", (actor, data, options, userId) => {
 });
 
 Hooks.on("renderActorDirectory", (app, html, data) => {
+  console.log("⚓ Naval System | Hooks on ok");
   const button = $(`
     <button class="create-nave">
       + Nave
