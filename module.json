@@ -2,7 +2,7 @@
   "id": "NavalSystem-FoundryModule",
   "title": "Naval System Module",
   "description": "Gestione delle schede del mio sistema homebrew navale",
-  "version": "0.1 (beta)",
+  "version": "0.1.0",
   "compatibility": {
     "minimum": "14",
     "verified": "14"
