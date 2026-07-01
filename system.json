@@ -1,0 +1,19 @@
+{
+  "id": "NavalSystem-FoudryModule",
+  "title": "Naval System by Master Marin",
+  "version": "0.1.0",
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14"
+  },
+  "authors": [
+    { "name": "ZuTure" }
+  ],
+  "documentTypes": {
+    "Actor": {
+      "ship": {
+        "name": "Ship"
+      }
+    }
+  }
+}
