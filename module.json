@@ -1,0 +1,18 @@
+{
+    "id": "NavalSystem-FoundryModule",
+    "title": "Naval System - Modulo di espansione homebrew",
+    "description": "Modulo homebrew per l'aggiunta delle regole homebrew contenute all'interno del manuale homebrew Sistema Navale",
+    "authors": [
+        {
+            "name" : "ZuTure"
+        }
+    ],
+    "versione" : "0.1.1",
+    "compatibility" : {
+        "minimum" : 14,
+        "verified" : 14
+    },
+    "esmodules" : [
+        "scripts/main.js"
+    ]
+}
