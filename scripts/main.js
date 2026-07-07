@@ -1,15 +1,13 @@
-import { NavalShipSheet } from "./ship-sheet.js";
+import { ShipData } from "./data/ship-data.js"
 
 Hooks.on("init", function() {
     console.log("⚓ Naval System Module | init ok 🟢");
 
+    CONFIG.Actor.dataModels["NavalSystem-FoundryModule.ship"] = ShipData;
+
     foundry.documents.collections.Actors.registerSheet(
-        "naval",
-        NavalShipSheet,
-        {
-            types: ["Vehicle"],
-            makeDefault: true
-        }
+        "NavalSystem-FoundryModule", ShipSheet,
+        { types: ["NavalSystem-FoundryModule.ship"], makeDefault: true, label: "Scheda Nave" }
     );
 });
 
