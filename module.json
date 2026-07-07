@@ -9,10 +9,24 @@
     ],
     "version" : "0.1.1",
     "compatibility" : {
-        "minimum" : 14,
+        "minimum" : 12,
         "verified" : 14
     },
     "esmodules" : [
         "scripts/main.js"
-    ]
+    ],
+    "relashioships": {
+        "systems": [{ "id": "dnd5e", "type": "system", "compatibility":{} }]
+    },
+    "styles": "styles/naval.css",
+    "languages": [{ "lang": "it", "name": "Italiano", "path": "lang/it.json"}],
+    "documentTypes": {
+        "Actor": {
+            "ship": { "htmlFields": ["biography"] }
+        },
+        "Item": {
+            "cannon": {},
+            "upgrade": {}
+        }
+    }
 }
