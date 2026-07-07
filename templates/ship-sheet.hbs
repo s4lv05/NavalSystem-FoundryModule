@@ -2,13 +2,13 @@
     <h2>{{actor.name}}</h2>
     <div class="stat">
         <label>Hull</label>
-        <span>{{actor.system.hull}}</span>
+        <span>{{actor.system.hull ?? 100}}</span>
         <button class="damage-hull">-10</button>
         <button class="repair-hull">+10</button>
     </div>
 
     <div class="stat">
         <label>Crew</label>
-        <span>{{actor.system.crew}}</span>
+        <span>{{actor.system.crew ?? 5}}</span>
     </div>
 </div>
