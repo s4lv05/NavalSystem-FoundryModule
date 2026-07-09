@@ -7,7 +7,7 @@ export class NavalShipSheet extends foundry.applications.sheets.ActorSheetV2 {
         classes: ["naval-sheet"],
         position: {
             width: 500,
-            heigth: 400
+            height: 400
         },
         window: {
             title: "Naval Ship",
@@ -21,11 +21,6 @@ export class NavalShipSheet extends foundry.applications.sheets.ActorSheetV2 {
         }
     };
 
-    constructor(document, options =  {}) {
-        super(option);
-        this.document = document; //actor
-    }
-
     async _prepareContext() {
         return {
             actor: this.document,
@@ -36,17 +31,17 @@ export class NavalShipSheet extends foundry.applications.sheets.ActorSheetV2 {
     _onRender(context, options) {
         const html = this.element;
 
-        html.querySelector(".damage-hull")?.addEventListener("click", async () => {
-            const current = this.document.system.hull ?? 0;
+        html.querySelector(".damage-scafo")?.addEventListener("click", async () => {
+            const current = this.document.system.scafo.value ?? 0;
             await this.document.update( {
-                "system.hull": current - 10
+                "system.scafo.value": current - 10
             });
         });
 
-        html.querySelector(".repair-hull")?.addEventListener("click", async () => {
-            const current = this.document.system.hull ?? 0;
+        html.querySelector(".repair-scafo")?.addEventListener("click", async () => {
+            const current = this.document.system.scafo.value ?? 0;
             await this.document.update({
-                "system.hull": current + 10
+                "system.scafo.value": current + 10
             });
         });
     }
