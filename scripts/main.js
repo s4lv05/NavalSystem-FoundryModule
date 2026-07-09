@@ -1,4 +1,4 @@
-import { NavalShipSheet } from "./sheets/ship-sheet.js";
+import { NavalShipSheet } from "./ship-sheet.js";
 
 Hooks.on("init", function() {
     console.log("⚓ Naval System Module | init ok 🟢");
