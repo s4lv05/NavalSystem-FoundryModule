@@ -1,0 +1,15 @@
+<div class="ship-stato" data-application-part="body">
+  <label>{{localize "NAVAL.Scafo"}}</label>
+  <input type="number" name="system.scafo.value" value="{{system.scafo.value}}">
+  / <span>{{system.scafo.max}}</span>
+
+  <label>{{localize "NAVAL.Vele"}}</label>
+  <input type="number" name="system.vela.value" value="{{system.vela.value}}">
+  / <span>{{system.vela.max}}</span>
+
+  <label>{{localize "NAVAL.OrologioTimone"}}</label>
+  <span>{{system.timone.orologio}} / {{system.timone.soglia}}</span>
+
+  <button type="button" class="damage-scafo">Danneggia Scafo</button>
+  <button type="button" class="repair-scafo">Ripara Scafo</button>
+</div>

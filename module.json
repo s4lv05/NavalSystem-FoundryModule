@@ -1,0 +1,24 @@
+{
+  "id": "NavalSystem-FoundryModule",
+  "title": "Naval System - Modulo di espansione homebrew",
+  "description": "Sistema di combattimento navale homebrew per dnd5e",
+  "version": "0.1.0",
+  "compatibility": { "minimum": 12, "verified": 14 },
+  "relationships": {
+    "systems": [
+      { "id": "dnd5e", "type": "system", "compatibility": {} }
+    ]
+  },
+  "esmodules": ["scripts/main.js"],
+  "styles": [
+    { "src": "styles/naval.css" }
+  ],
+  "languages": [
+    { "lang": "it", "name": "Italiano", "path": "lang/it.json" }
+  ],
+  "documentTypes": {
+    "Actor": {
+      "ship": {}
+    }
+  }
+}
