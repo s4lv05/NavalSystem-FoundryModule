@@ -13,12 +13,12 @@
         "verified" : 14
     },
     "esmodules" : [
-        "scripts/main.js"
+        { "src": "scripts/main.js" }
     ],
     "relashionships": {
         "systems": [{ "id": "dnd5e", "type": "system", "compatibility":{} }]
     },
-    "styles": "styles/naval.css",
+    "styles": {"src": "styles/naval.css"},
     "languages": [{ "lang": "it", "name": "Italiano", "path": "lang/it.json"}],
     "documentTypes": {
         "Actor": {
