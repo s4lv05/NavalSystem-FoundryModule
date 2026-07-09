@@ -1,6 +1,8 @@
 const path = "modules/NavalSystem-FoundryModule/templates/ship-stato.hbs";
+const { HandlebarsApplicationMixin } = foundry.applications.api;
+const { ActorSheetV2 } = foundry.applications.sheets;
 
-export class NavalShipSheet extends foundry.applications.sheets.ActorSheetV2 {
+export class NavalShipSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
   static DEFAULT_OPTIONS = {
     id: "naval-ship-sheet",
     classes: ["naval-sheet"],
