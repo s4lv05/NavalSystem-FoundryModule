@@ -15,7 +15,7 @@
     "esmodules" : [
         "scripts/main.js"
     ],
-    "relashioships": {
+    "relashionships": {
         "systems": [{ "id": "dnd5e", "type": "system", "compatibility":{} }]
     },
     "styles": "styles/naval.css",
