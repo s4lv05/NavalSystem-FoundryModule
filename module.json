@@ -18,7 +18,7 @@
     "relashionships": {
         "systems": [{ "id": "dnd5e", "type": "system", "compatibility":{} }]
     },
-    "styles": {"src": "styles/naval.css"},
+    "styles": [{"src": "styles/naval.css"}],
     "languages": [{ "lang": "it", "name": "Italiano", "path": "lang/it.json"}],
     "documentTypes": {
         "Actor": {
