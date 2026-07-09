@@ -1,4 +1,5 @@
-import { ShipData } from "./data/ship-data.js"
+import { ShipData } from "./data/ship-data.js";
+import { ShipSheet } from "../templates/ship-stato.hbs";
 
 Hooks.on("init", function() {
     console.log("⚓ Naval System Module | init ok 🟢");
